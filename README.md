@@ -1,5 +1,5 @@
 # nrf24l01p-decode
-A program for decoding transcripts of SPI transactions between a microcontroller and an [nRF24L01+ radio IC](http://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF24L01P/%28language%29/eng-GB).
+A program for decoding transcripts of SPI transactions between a microcontroller and an [nRF24L01+ radio IC](http://www.nordicsemi.com/eng/Products/2.4GHz-RF/nRF24L01P/%28language%29/eng-GB). In addition to making the transcript more readable, the program attempts to decipher information such as the packet format and addresses used. Minimal support for nRF24L01+ clones that are produced by Beken is included.
 
 ## About
 Many wireless devices use Nordic Semiconductor's ShockBurst and Enhanced ShockBurst 2.4GHz RF protocols. The nRF24L01+ IC (and its knock-offs) are interesting because they are widely-used, compatible with contemporary Nordic radio ICs, and somewhat hacker-friendly.
@@ -49,7 +49,7 @@ $ python nrf24l01p-decode.py -i INPUT_FILE_PATH -o OUTPUT_FILE_PATH
 To create a file containing micro-esb configuration code:
 
 ```
-$ pythong nrf24l01p-decode.py -i INPUT_FILE_PATH -u UESB_FILE_PATH
+$ python nrf24l01p-decode.py -i INPUT_FILE_PATH -u UESB_FILE_PATH
 ```
 
 The `-o` and `-u` options can also be combined.
