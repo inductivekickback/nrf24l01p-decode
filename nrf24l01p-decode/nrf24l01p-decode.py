@@ -607,7 +607,7 @@ class Decode(object):
         op = self.get_operational_mode()
 
         if (self.beken_detected):
-            result.append('// NOTE: The device appears to be a Nordic clone (i.e. Beken BK2423).')
+            result.append('// NOTE: The device appears to be a Nordic clone (e.g. Beken BK2423).')
 
         # The micro-esb library uses PIPE0 for TX.
         if ('PRX' != op):
